@@ -6,19 +6,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "agent": "tsx src/main.ts",
+    "tistory:login": "tsx src/login-tistory.ts",
+    "playwright:install": "playwright install chromium"
   },
   "dependencies": {
+    "@google/genai": "^1.50.1",
+    "@notionhq/client": "^5.20.0",
+    "form-data": "^4.0.5",
     "next": "16.2.4",
+    "openai": "^6.34.0",
+    "playwright": "^1.59.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "twitter-api-v2": "^1.29.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

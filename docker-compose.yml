@@ -1,0 +1,17 @@
+services:
+  notion-tistory-platform:
+    container_name: notion-tistory-platform
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+    volumes:
+      - ./assets:/app/assets
+      - ./playwright:/app/playwright
+    restart: unless-stopped

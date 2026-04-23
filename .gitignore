@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local automation artifacts
+/playwright/.auth/*.json
+/assets/thumbnails/*.png
+/assets/thumbnails/*.jpg
+/assets/thumbnails/*.webp
