@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.59.1-noble AS builder
+FROM mcr.microsoft.com/playwright:v1.62.1-noble AS builder
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-FROM mcr.microsoft.com/playwright:v1.59.1-noble AS runner
+FROM mcr.microsoft.com/playwright:v1.62.1-noble AS runner
 
 WORKDIR /app
 
